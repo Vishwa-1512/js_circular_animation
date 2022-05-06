@@ -1,0 +1,148 @@
+#animate {
+    width: 15rem;
+    margin: auto;
+    position: relative;
+    margin-top: 2rem;
+    height: 15rem;
+}
+
+#animate div {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 500ms ease-in-out;
+}
+
+#animate div:nth-child(1) {
+    background-color: red;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+#animate div:nth-child(2) {
+    background-color: yellow;
+    height: 3rem;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+
+#animate div:nth-child(3) {
+    background-color: blue;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#animate div:nth-child(4) {
+    background-color: green;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.btns {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#btn1,
+#btn2 {
+    padding: 0.5rem 3rem;
+    margin-right: 2rem;
+    border: none;
+    outline: none;
+    color: white;
+    background: #118e99;
+    border-radius: 0.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#btn1:hover,
+#btn2:hover {
+    color: #118e99;
+    background: white;
+    border: 1px solid black;
+    transition-duration: 1s;
+}
+
+@keyframes div0 {
+    0% {
+        width: 3rem;
+        height: 3rem;
+    }
+    50% {
+        width: 15rem;
+        border-top-left-radius: 5rem;
+        border-bottom-left-radius: 5rem;
+        border-top-right-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+    }
+    100% {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
+}
+
+@keyframes div1 {
+    0% {
+        width: 3rem;
+        height: 3rem;
+    }
+    50% {
+        border-top-left-radius: 5rem;
+        border-top-right-radius: 5rem;
+        border-bottom-left-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+        height: 15rem;
+    }
+    100% {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
+}
+
+@keyframes div2 {
+    0% {
+        width: 3rem;
+        height: 3rem;
+    }
+    50% {
+        width: 15rem;
+        border-top-left-radius: 5rem;
+        border-bottom-left-radius: 5rem;
+        border-top-right-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+    }
+    100% {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
+}
+
+@keyframes div3 {
+    0% {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
+    50% {
+        border-top-left-radius: 5rem;
+        border-top-right-radius: 5rem;
+        border-bottom-left-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+        height: 15rem;
+    }
+    100% {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
+}
